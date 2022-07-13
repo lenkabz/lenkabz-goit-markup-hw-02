@@ -1,8 +1,25 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #000000;
+    --accent-color: #2196F3;
+    --additional-color: #FFFFFF;
+    --selective-color: #212121;
+    --button-color: #FFFFFF;
+    --button-bg-color: #2196F3;
+    --footer-bg-color: #2F303A;
+    --button-portfolio-bg-color: #F5F4FA;
+    --primary-br-color: #ffffff;
+    --secondary-bg-color: #E5E5E5;
+    
+}
+
 body {
-    font-family: 'Roboto';
-    font-style: normal;
-    background: #E5E5E5;
-    color: #757575;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.7;
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-text-color);
 }
 
 ul{
@@ -10,56 +27,179 @@ ul{
 }
 
 .logo {
-
-position: absolute;
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 24px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
+    font-family: Raleway, cursive;
     font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    color: #2196F3;
+    line-height: 1.2px;
+    color: var(--title-text-color);
+    text-decoration: none;
 }
 
 span {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
+    font-family: Raleway, cursive;
     font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    color:#000000
+    line-height: 1.2;
+    color: var(--accent-color);
 }
 
 /* site nav */
 
 .site-nav .link {
-color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--selective-color);
+    text-decoration: none;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-color:#2196F3
+    color:var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
 }
 
 .auth-nav .link {
-    color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--primary-text-color);
+    text-decoration: none;
 }
 
 .auth-nav .link:hover,
 .auth-nav .link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
+/* here */
+
 .hero-title {
-    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    color: var(--additional-color);
 }
 
 .feature-list .title {
-    color: #212121;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--selective-color);
 }
 
+.feature-list .text{
+font-weight: 400;
+}
+
+.work-list {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--selective-color);
+}
+
+.junior-list {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--selective-color);
+}
+
+.person {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--selective-color);
+}
+
+.profession {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--primary-text-color);
+}
+
+.footer {
+    background: var(--footer-bg-color);
+}
+
+.logo-two {
+    font-family: Raleway, cursive;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--additional-color);
+    text-decoration: none;
+}
+
+span {
+    font-family: Raleway, cursive;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--accent-color);
+}
+
+.address-list {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+    color: var(--additional-color);
+}
+
+.separator .item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+/* Button */
+
+.button {
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color : var(--button-color);
+    background-color: var(--button-bg-color);
+}
+
+      /* Портфолио */
+
+.button-portfolio {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--selective-color);
+    background-color: var(--button-portfolio-bg-color);
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+    color: var(--additional-color);
+    background-color: var(--accent-color);
+}
+
+.point {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--selective-color);
+}
+
+.article {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9; 
+    color: var(--primary-text-color);
+}
