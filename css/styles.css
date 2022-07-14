@@ -17,8 +17,6 @@ body {
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
     font-size: 14px;
-    line-height: 1.7;
-    background-color: var(--secondary-bg-color);
     color: var(--primary-text-color);
 }
 
@@ -84,6 +82,8 @@ background: #2F303A;
     font-size: 44px;
     line-height: 1.4;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
     color: var(--additional-color);
 }
 
@@ -91,6 +91,7 @@ background: #2F303A;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-transform: uppercase;
     color: var(--selective-color);
 }
 
@@ -122,7 +123,6 @@ font-weight: 400;
 }
 
 .profession {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
     color: var(--primary-text-color);
@@ -149,9 +149,7 @@ span {
 
 .address-list {
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 2;
+    line-height: 1.71;
     color: var(--additional-color);
 }
 
@@ -162,15 +160,20 @@ span {
     color: var(--primary-text-color);
     text-decoration: none;
 }
+.separator .item:hover,
+.separator .item:focus {
+    color:var(--accent-color);
+}
 
 /* Button */
 
 .button {
+    font-family: inherit;
     cursor: pointer;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.2;
-    align-items: center;
-    text-align: center;
+    letter-spacing: 0.06em;
     color : var(--button-color);
     background-color: var(--button-bg-color);
 }
@@ -178,6 +181,7 @@ span {
       /* Портфолио */
 
 .button-portfolio {
+    font-family: inherit;
     cursor: pointer;
     font-weight: 500;
     font-size: 16px;
